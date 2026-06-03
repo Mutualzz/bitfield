@@ -11,21 +11,31 @@ export function resolveBaseBits(
     roles: RoleLike[],
     memberRoleIds: Snowflake[],
 ): bigint {
-    const rolesById = new Map<string, bigint>();
+    const rolesById = new Map<string, { allow: bigint; deny: bigint }>();
 
     for (const role of roles) {
-        rolesById.set(role.id, toBigInt(role.permissions));
+        rolesById.set(role.id, {
+            allow: toBigInt(role.allow ?? 0),
+            deny: toBigInt(role.deny ?? 0),
+        });
     }
 
     let bits = 0n;
 
     // @everyone == spaceId
     const everyone = rolesById.get(spaceId);
-    if (everyone != null) bits |= everyone;
+    if (everyone != null) bits |= everyone.allow;
 
     for (const roleId of memberRoleIds) {
-        const permission = rolesById.get(roleId);
-        if (permission != null) bits |= permission;
+        const role = rolesById.get(roleId);
+        if (role != null) bits |= role.allow;
+    }
+    // @everyone deny
+    if (everyone != null) bits &= ~everyone.deny;
+
+    for (const roleId of memberRoleIds) {
+        const role = rolesById.get(roleId);
+        if (role != null) bits &= ~role.deny;
     }
 
     return bits;
@@ -58,7 +68,6 @@ export function applyOverwriteLayer(
     if (everyoneOw)
         apply(toBigInt(everyoneOw.allow), toBigInt(everyoneOw.deny));
 
-    // roles (aggregate)
     let roleAllow = 0n;
     let roleDeny = 0n;
 

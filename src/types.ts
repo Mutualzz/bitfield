@@ -2,7 +2,8 @@ export type Snowflake = string;
 
 export interface RoleLike {
     id: Snowflake;
-    permissions: bigint | string;
+    allow: bigint | string;
+    deny: bigint | string;
 }
 
 export interface MemberRoleLike {
