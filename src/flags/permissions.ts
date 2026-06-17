@@ -19,7 +19,7 @@ export const permissionFlags = {
     ModerateMembers: 1n << 11n, // Allows moderating members (timeouts etc.) - TODO: Implement
     MuteMembers: 1n << 12n, // Allows muting members
     DeafenMembers: 1n << 13n, // Allows deafening members
-    MoveMembers: 1n << 14n, // Allows moving members between voice channels - TODO: Implement
+    MoveMembers: 1n << 14n, // Allows moving members between voice channels
     ManageNicknames: 1n << 15n, // Allows managing nicknames of others - TODO: Implement
     CreateInvites: 1n << 16n, // Allows creation of invites
 
