@@ -5,6 +5,7 @@ export const spaceFlags = {
     Archived: 1n << 2n,
     Locked: 1n << 3n,
     Nsfw: 1n << 4n,
+    Lockdown: 1n << 5n,
 } as const satisfies Record<string, bigint>;
 
 export type SpaceFlag = keyof typeof spaceFlags;
