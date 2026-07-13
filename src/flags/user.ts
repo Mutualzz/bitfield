@@ -14,11 +14,11 @@ export const userFlags = {
 
   // Developer
   Employee: 1n << 30n,
-  // 31–39 reserved for dev/internal use
+  Developer: 1n << 31n,
+  // 32–39 reserved for dev/internal use
 
   // Cosmetic
   EarlySupporter: 1n << 40n,
-
   BugHunter: 1n << 41n,
   CommunityHelper: 1n << 42n,
   // 44–59 reserved for cosmetic
@@ -36,6 +36,7 @@ export const staffToggleableUserFlags = [
   "Verified",
   "Tester",
   "Employee",
+  "Developer",
   "EarlySupporter",
   "BugHunter",
   "CommunityHelper",
