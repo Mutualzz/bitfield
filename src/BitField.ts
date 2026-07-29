@@ -5,7 +5,7 @@ export class BitField<
     bits: bigint;
     private readonly flags: Readonly<T>;
 
-    private constructor(flags: Readonly<T>, bits: bigint = 0n) {
+    private constructor(flags: Readonly<T>, bits = 0n) {
         this.flags = flags;
         this.bits = bits;
     }
@@ -72,7 +72,7 @@ export class BitField<
     toArray(): K[] {
         const out: K[] = [];
         for (const k in this.flags) {
-            // eslint-disable-next-line no-prototype-builtins
+             
             if (Object.prototype.hasOwnProperty.call(this.flags, k)) {
                 const key = k as unknown as K;
                 if (this.has(key)) out.push(key);

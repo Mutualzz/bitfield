@@ -41,11 +41,11 @@ pnpm --filter @mutualzz/bitfield typecheck
 
 ## Authors & credit
 
-Community contributors are credited via git authorship, PR attribution, and changelogs (see [`CONTRIBUTING.md`](./CONTRIBUTING.md)).
+Community contributors are credited via git authorship, PR attribution, and changelogs (see [`CONTRIBUTING.md`](https://github.com/Mutualzz/bitfield/blob/master/CONTRIBUTING.md)).
 
 ## License & contributions
 
 Source is available for transparency and community contributions. Contributors get credit for merged work.
 
-- [`LICENSE`](./LICENSE) — no unofficial redistribution / competing hosted services without permission
-- [`CONTRIBUTING.md`](./CONTRIBUTING.md) — how to fork, open PRs, and how credit works
+- [`LICENSE`](https://github.com/Mutualzz/bitfield/blob/master/LICENSE) — no unofficial redistribution / competing hosted services without permission
+- [`CONTRIBUTING.md`](https://github.com/Mutualzz/bitfield/blob/master/CONTRIBUTING.md) — how to fork, open PRs, and how credit works

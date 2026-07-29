@@ -1,7 +1,7 @@
 import { permissionFlags } from "./flags";
 
-export type RoleLike = { id: string; position: number };
-export type MemberLike = { userId: string; roleIds: string[] };
+export interface RoleLike { id: string; position: number }
+export interface MemberLike { userId: string; roleIds: string[] }
 
 export function isOwner(spaceOwnerId: string, actorUserId: string) {
     return spaceOwnerId === actorUserId;
