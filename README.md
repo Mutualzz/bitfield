@@ -1,4 +1,14 @@
-# `@mutualzz/bitfield`
+<div align="center">
+
+# Mutualzz development moved to [git.mutualzz.com](https://git.mutualzz.com/mutualzz/mutualzz)
+
+**GitHub is a read-only mirror. Issues and pull requests opened on GitHub are not monitored.**
+
+Sign in with your GitHub account. No new password needed.
+
+</div>
+
+# `Mutualzz BitField`
 
 BigInt bitfield helpers and Mutualzz permission / flag definitions.
 
@@ -6,11 +16,11 @@ Used across the server and clients to pack and check flags (permissions, user fl
 
 ## What’s in here
 
-| Export | Role |
-|---|---|
-| `BitField` | Typed bitfield class (`has`, `hasAny`, `hasAll`, add/remove, serialize) |
-| Flag tables | Named `bigint` flag maps for channels, members, roles, spaces, users, expressions, messages, read state, permissions |
-| Engine / hierarchy | Permission resolution helpers used with those flags |
+| Export             | Role                                                                                                                 |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------- |
+| `BitField`         | Typed bitfield class (`has`, `hasAny`, `hasAll`, add/remove, serialize)                                              |
+| Flag tables        | Named `bigint` flag maps for channels, members, roles, spaces, users, expressions, messages, read state, permissions |
+| Engine / hierarchy | Permission resolution helpers used with those flags                                                                  |
 
 Example:
 
