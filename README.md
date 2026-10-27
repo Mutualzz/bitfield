@@ -1,6 +1,6 @@
 <div align="center">
 
-# Mutualzz development moved to [git.mutualzz.com](https://git.mutualzz.com/mutualzz/mutualzz)
+# Mutualzz is developed at [git.mutualzz.com](https://git.mutualzz.com/mutualzz/bitfield)
 
 **GitHub is a read-only mirror. Issues and pull requests opened on GitHub are not monitored.**
 
@@ -51,11 +51,11 @@ pnpm --filter @mutualzz/bitfield typecheck
 
 ## Authors & credit
 
-Community contributors are credited via git authorship, PR attribution, and changelogs (see [`CONTRIBUTING.md`](https://github.com/Mutualzz/bitfield/blob/master/CONTRIBUTING.md)).
+Community contributors are credited via git authorship, PR attribution, and changelogs (see [`CONTRIBUTING.md`](https://git.mutualzz.com/mutualzz/bitfield/src/branch/master/CONTRIBUTING.md)).
 
 ## License & contributions
 
 Source is available for transparency and community contributions. Contributors get credit for merged work.
 
-- [`LICENSE`](https://github.com/Mutualzz/bitfield/blob/master/LICENSE) — no unofficial redistribution / competing hosted services without permission
-- [`CONTRIBUTING.md`](https://github.com/Mutualzz/bitfield/blob/master/CONTRIBUTING.md) — how to fork, open PRs, and how credit works
+- [`LICENSE`](https://git.mutualzz.com/mutualzz/bitfield/src/branch/master/LICENSE) — no unofficial redistribution / competing hosted services without permission
+- [`CONTRIBUTING.md`](https://git.mutualzz.com/mutualzz/bitfield/src/branch/master/CONTRIBUTING.md) — how to fork, open PRs, and how credit works
