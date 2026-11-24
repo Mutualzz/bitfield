@@ -21,6 +21,8 @@ export const userFlags = {
   EarlySupporter: 1n << 40n,
   BugHunter: 1n << 41n,
   CommunityHelper: 1n << 42n,
+  Artist: 1n << 43n,
+  Creator: 1n << 44n,
   // 44–59 reserved for cosmetic
 
   // Verification
@@ -40,6 +42,8 @@ export const staffToggleableUserFlags = [
   "EarlySupporter",
   "BugHunter",
   "CommunityHelper",
+  "Artist",
+  "Creator",
   "AgeConfirmed18Plus",
 ] as const satisfies readonly UserFlag[];
 
